@@ -8,10 +8,7 @@ import {
   SiAndroidstudio,
   SiMicrosoftsqlserver,
   SiAdobeillustrator,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
+  SiChatbot,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -45,6 +42,11 @@ function Toolstack() {
       <p className="icon-tag">Adobe Illustrator</p>
         <SiAdobeillustrator />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <p className="icon-tag">AI Chatbots</p>
+        <SiChatbot />
+      </Col>
+      
     </Row>
   );
 }

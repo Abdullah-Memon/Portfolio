@@ -23,7 +23,7 @@ import {
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "space-evenly", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
      <p className="icon-tag">C Programming</p>
         <SiC />
@@ -41,7 +41,7 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-     <p className="icon-tag">C Sharp</p>
+     <p className="icon-tag">C Sharp Programming</p>
         <SiCsharp />
         <div class="card__progress">
           <progress value="80" max="100">80</progress>
@@ -49,7 +49,7 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-      <p className="icon-tag">Python</p>
+      <p className="icon-tag">Python Programming</p>
         <DiPython />
         <div class="card__progress">
           <progress value="75" max="100"></progress>
@@ -65,7 +65,7 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-     <p className="icon-tag">HTML 5</p>
+     <p className="icon-tag">HTML 5 </p>
         <DiHtml5 />
         <div class="card__progress">
           <progress value="95" max="100"></progress>

@@ -1,11 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Home2 from './Home2.js'
+import Home2 from "./Home2.js";
 import profile from "../../Assets/profile.png";
 import Type from "./Type";
+import Tilt from "react-parallax-tilt";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import laptopImg from "../../Assets/about.png";
-import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import Berif_Intro from "./Berif_Intro.js";
+import CertificateCard from "../About/CertificateCard.js";
 
 function Home() {
   return (
@@ -14,24 +17,25 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h3 className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </h3>
 
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> Abdullah Memon</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <span className="heading-name"> Knows as </span>
+              <div style={{ paddingLeft: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={4} className="profile-content">
               <img
                 src={profile}
                 alt="home pic"
@@ -58,50 +62,7 @@ function Home() {
                 Berif <strong className="purple">Introduction</strong>
               </h1>
 
-              <Card className="quote-card-view">
-                <Card.Body>
-                  <blockquote className="blockquote mb-0">
-                    <p style={{ textAlign: "justify" }}>
-                      Hi Everyone, I am{" "}
-                      <span className="purple">Abdullah Memon </span>
-                      from <span className="purple"> Pakistan.</span>
-                      <br />
-                      I’m currently perusing path to earning a software
-                      Engineering degree from{" "}
-                      <span className="purple">
-                        Quaid-e-Awam university of Engineering Science and
-                        Technology
-                      </span>{" "}
-                      Nawabshah, With a strong foundation in{" "}
-                      <span className="purple">
-                        Web Development, Database, Desktop Application
-                        Development and Android development.{" "}
-                      </span>
-                      <br />
-                    </p>
-                    <p>Apart from coding, some other activities that I love to do!</p>
-                    <ul>
-                      <li className="about-activity">
-                        <ImPointRight /> Playing Games.
-                      </li>
-                      <li className="about-activity">
-                        <ImPointRight /> Researching about Technology.
-                      </li>
-                      <li className="about-activity">
-                        <ImPointRight /> Travelling.
-                      </li>
-                      <li className="about-activity">
-                        <ImPointRight /> Trying new stuff.
-                      </li>
-                    </ul>
-
-                    <p style={{ color: "#595959" }}>
-                    "Growth fuels wisdom; each step forward is a lesson learned."
-                    </p>
-                    <footer className="blockquote-footer">Abdullah</footer>
-                  </blockquote>
-                </Card.Body>
-              </Card>
+              <Berif_Intro />
             </Col>
             <Col
               md={5}
@@ -114,7 +75,53 @@ function Home() {
         </Container>
       </Container>
 
-      <Home2/>
+      <Container>
+        <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+          FOLLOW <strong className="purple"> ME </strong> ON
+        </h1>
+        <p>
+          Feel free to <span className="purple">connect </span>with me
+        </p>
+        <ul className="home-about-social-links">
+          <li className="social-icons">
+            <a
+              href="https://github.com/Abdullah-Memon"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour  home-social-icons"
+            >
+              <AiFillGithub />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a
+              href="https://www.linkedin.com/in/connect-Abdullah/"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour  home-social-icons"
+            >
+              <FaLinkedinIn />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a
+              href="https://www.instagram.com/abdullah_codez"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <AiFillInstagram />
+            </a>
+          </li>
+        </ul>
+      </Container>
+
+      <Container style={{paddingTop: "20px" }}>
+        <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+          All <strong className="purple"> Certificates </strong>
+        </h1>
+        <CertificateCard />
+      </Container>
     </section>
   );
 }
