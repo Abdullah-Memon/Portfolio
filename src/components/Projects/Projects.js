@@ -52,6 +52,17 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Portfolio Website | React js Project"
+              description="My perosnal portfolio webist uing javascript framework called React js. (Personal Project)"
+              ghLink="https://github.com/Abdullah-Memon/Portfolio"
+              // demoLink=""              
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
