@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block assets/cv directory from indexing
+Disallow: /assets/cv/
+
+# Update the domain below before going live
+Sitemap: https://abdullahmemon.dev/sitemap.xml

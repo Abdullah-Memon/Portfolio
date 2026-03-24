@@ -1,0 +1,81 @@
+/* ============================================================
+   about.css – about page specific styles
+   ============================================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+
+.about-avatar-card { padding: 2rem; text-align: center; position: sticky; top: 6rem; }
+
+.about-avatar-img {
+  width: 160px; height: 160px;
+  border-radius: 1.5rem;
+  background: var(--accent-soft);
+  margin: 0 auto 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 4rem;
+}
+
+.about-name { font-size: 1.3rem; font-weight: 800; margin-bottom: .25rem; }
+.about-role { color: var(--accent); font-size: .9rem; font-weight: 600; margin-bottom: 1rem; }
+
+.about-info-list { list-style: none; text-align: left; }
+.about-info-list li {
+  display: flex; align-items: center; gap: .75rem;
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--accent-soft);
+  font-size: .875rem;
+  color: var(--text-secondary);
+}
+.about-info-list li:last-child { border-bottom: none; }
+.about-info-list li span:first-child { color: var(--accent); flex-shrink: 0; }
+.about-info-list li strong { color: var(--text-primary); }
+
+/* Skills */
+.skill-item { margin-bottom: 1.25rem; }
+.skill-label {
+  display: flex; justify-content: space-between;
+  font-size: .875rem; font-weight: 600;
+  margin-bottom: .4rem;
+}
+.skill-label span:last-child { color: var(--accent); }
+
+/* Education / Experience tabs */
+.tab-group { display: flex; gap: .5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.tab-btn {
+  padding: .5rem 1.25rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent-soft);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: .875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease);
+}
+.tab-btn.active, .tab-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Certifications */
+.cert-card { padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start; }
+.cert-icon {
+  width: 2.5rem; height: 2.5rem;
+  border-radius: .75rem;
+  background: var(--accent-soft);
+  display: grid; place-items: center;
+  color: var(--accent); font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.cert-name  { font-weight: 700; font-size: .95rem; }
+.cert-issuer{ font-size: .825rem; color: var(--text-secondary); }

@@ -1,0 +1,55 @@
+/* ============================================================
+   contact.css – contact page specific styles
+   ============================================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.contact-info { padding: 2rem; }
+.contact-info-title { font-size: 1.2rem; font-weight: 700; margin-bottom: .5rem; }
+.contact-info-sub   { color: var(--text-secondary); font-size: .9rem; margin-bottom: 2rem; line-height: 1.65; }
+
+.contact-item {
+  display: flex; gap: 1rem; align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.contact-item-icon {
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 1rem;
+  background: var(--accent-soft);
+  display: grid; place-items: center;
+  color: var(--accent); font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact-item-label { font-size: .75rem; font-weight: 600; color: var(--text-secondary); margin-bottom: .15rem; }
+.contact-item-value { font-size: .9rem; font-weight: 500; }
+.contact-item-value a { color: var(--accent); }
+
+.contact-form { padding: 2rem; }
+.contact-form-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+.form-stack { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.form-submit-wrap { margin-top: .5rem; }
+
+.toast {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--accent); color: #fff;
+  padding: .85rem 1.5rem;
+  border-radius: 1rem;
+  font-size: .875rem; font-weight: 600;
+  box-shadow: var(--shadow-clay);
+  z-index: 300;
+  opacity: 0; pointer-events: none;
+  transform: translateY(10px);
+  transition: all .3s var(--ease);
+}
+.toast.show { opacity: 1; pointer-events: auto; transform: translateY(0); }

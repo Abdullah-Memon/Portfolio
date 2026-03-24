@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdullah Memon – Full Stack Web Developer with 5+ years experience in React, Node.js, MERN, .NET and AI-powered web apps. Open to full-time roles." />
+  <meta name="keywords" content="Abdullah Memon, Full Stack Developer, MERN Developer, React, Node.js, Next.js, MongoDB, SQL Server, Portfolio" />
+  <meta name="author" content="Abdullah Memon" />
+  <meta property="og:title" content="Abdullah Memon | Full Stack Web Developer" />
+  <meta property="og:description" content="5+ years building scalable web applications with React, Node.js, Next.js, and modern back-end stacks." />
+  <meta property="og:type" content="website" />
+  <title>Abdullah Memon | Full Stack Web Developer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/style/main.css" />
+  <link rel="stylesheet" href="assets/style/index.css" />
+  <link rel="stylesheet" href="assets/style/portfolio.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ SPLASH ═══════════════════════ -->
+  <div id="splash">
+    <div class="splash-logo">&lt;A/&gt;</div>
+    <div class="splash-bar"></div>
+  </div>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">&lt;A/&gt;</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <a href="assets/cv/Web Developer Abdullah Memon Developer.pdf" download class="btn btn-primary" style="padding:.55rem 1.1rem;font-size:.82rem;">
+          <i class="fa fa-download"></i> Resume
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <ul id="mobileMenu" class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="hero section" id="hero" style="position:relative;">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-avail reveal">
+            <span class="avail-dot"></span>
+            Available for new opportunities
+          </div>
+
+          <p class="hero-greeting reveal">Full Stack Web Developer</p>
+          <h1 class="hero-name reveal">Abdullah Memon<span class="accent-dot">.</span></h1>
+          <p class="hero-title reveal">
+            <span id="typewriter" data-roles='["React & Next.js Engineer","Node.js & Express Expert","MERN Stack Developer","AI-Integrated App Builder","Full Stack Web Developer"]'></span>
+            <span class="cursor"></span>
+          </p>
+          <p class="hero-bio reveal">
+            BE Software Engineer with 5+ years of experience building scalable web apps and AI-powered platforms using React, Next.js, Node.js, and modern databases focused on clean code and real performance.
+          </p>
+
+          <div class="hero-btns reveal">
+            <a href="portfolio.html" class="btn btn-primary">
+              <i class="fa fa-briefcase"></i> View Work
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fa fa-envelope"></i> Hire Me
+            </a>
+          </div>
+
+          <div class="social-links reveal" style="margin-top:1.75rem;">
+            <a href="https://github.com/Abdullah-Memon" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/memon-abdullah/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:abdullahmemon1502@gmail.com" class="social-link" aria-label="Email">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- scroll indicator -->
+      <div class="scroll-indicator">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ STATS ═══════════════════════ -->
+    <section class="section" style="padding-top:0;" id="stats">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-card reveal">
+            <i class="fa fa-clock stat-icon"></i>
+            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-card reveal">
+            <i class="fa fa-layer-group stat-icon"></i>
+            <div class="stat-number" data-target="20" data-suffix="+">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card reveal">
+            <i class="fa fa-handshake stat-icon"></i>
+            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+            <div class="stat-label">Companies / Clients</div>
+          </div>
+          <div class="stat-card reveal">
+            <i class="fa fa-chart-line stat-icon"></i>
+            <div class="stat-number" data-target="93" data-suffix="%">0</div>
+            <div class="stat-label">Performance Improvement</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ ABOUT INTRO ═══════════════════════ -->
+    <section class="section" id="about-intro">
+      <div class="container">
+        <p class="section-sub reveal">Get to know me</p>
+        <h2 class="section-title reveal">About Me<span class="accent-dot">.</span></h2>
+
+        <div class="ai-wrap reveal">
+
+          <!-- Photo -->
+          <div class="ai-photo-col">
+            <div class="ai-photo-frame">
+              <img src="assets/images/profile.jpeg" alt="Abdullah Memon" class="ai-photo" />
+              <div class="ai-photo-ring"></div>
+              <div class="ai-photo-dot ai-photo-dot--tl"></div>
+              <div class="ai-photo-dot ai-photo-dot--br"></div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="ai-text-col">
+            <h3 class="ai-name">Hi, I'm Abdullah Memon<span class="accent-dot">.</span></h3>
+            <p class="ai-tagline">Full Stack Web Developer &amp; AI Engineer based in Pakistan</p>
+
+            <p class="ai-bio">
+              I'm a BE Software Engineer from QUEST Nawabshah (CGPA 3.82) with <strong>5+ years</strong> of hands-on experience designing and shipping production-grade web applications. I specialise in the <strong>MERN stack</strong> — React, Next.js, Node.js, Express and MongoDB — and I'm equally comfortable working with SQL Server, PostgreSQL, PHP, C# / .NET, and Python.
+            </p>
+            <p class="ai-bio" style="margin-top:.85rem;">
+              Beyond front-end and back-end work I've contributed to AI research, building large-scale data preprocessing pipelines that fed <strong>118M Sindhi-language tokens</strong> into a custom LLM. I care deeply about clean architecture, measurable performance gains, and experiences that feel effortless to the end user.
+            </p>
+
+            <div class="ai-facts">
+              <div class="ai-fact">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>Hyderabad, Pakistan</span>
+              </div>
+              <div class="ai-fact">
+                <i class="fa fa-graduation-cap"></i>
+                <span>BE Software Engineering · QUEST</span>
+              </div>
+              <div class="ai-fact">
+                <i class="fa fa-envelope"></i>
+                <span>Abdullahmemon1502@gmail.com</span>
+              </div>
+              <div class="ai-fact">
+                <i class="fa fa-briefcase"></i>
+                <span>Open to full-time &amp; remote roles</span>
+              </div>
+            </div>
+
+            <div class="ai-actions">
+              <a href="about.html" class="btn btn-primary"><i class="fa fa-user"></i> Full Profile</a>
+              <a href="assets/cv/Web Developer Abdullah Memon Developer.pdf" download class="btn btn-outline"><i class="fa fa-download"></i> Download CV</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ TECH STACK ═══════════════════════ -->
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="section-sub reveal">Technologies I work with daily</p>
+        <h2 class="section-title reveal">Tech Stack<span class="accent-dot">.</span></h2>
+        <div class="tech-grid reveal" style="margin-top:2rem;">
+          <span class="tag"><i class="fab fa-react"></i> React.js</span>
+          <span class="tag">Next.js</span>
+          <span class="tag"><i class="fab fa-node-js"></i> Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">MS SQL Server</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">JWT / OAuth</span>
+          <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tag">Redux Toolkit</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="tag">Vue.js</span>
+          <span class="tag">Flask</span>
+          <span class="tag">PHP</span>
+          <span class="tag">C# / .NET</span>
+          <span class="tag">Python</span>
+          <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section-sub reveal">What I bring to the table</p>
+        <h2 class="section-title reveal">Services<span class="accent-dot">.</span></h2>
+        <div class="services-grid">
+
+          <!-- 1: Front-End -->
+          <div class="sc sc--blue reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,80 C40,50 80,110 120,75 C160,40 190,90 210,70 L210,140 L0,140 Z" fill="#bdd0fc"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,90 C50,65 90,105 140,80 C175,62 200,95 210,85 L210,140 L0,140 Z" fill="#7aa8f9"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,100 C45,80 100,115 150,92 C185,76 205,100 210,96 L210,140 L0,140 Z" fill="#4a7cf6"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fab fa-react"></i></div>
+              <span class="sc__title">Front-End Development</span>
+            </div>
+            <div class="sc__tags"><span>React</span><span>Next.js</span><span>CSS</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">Front-End Development</span>
+              <p>Pixel-perfect, responsive UIs with React.js, Next.js, Redux Toolkit, and Tailwind CSS — mobile-first and accessible.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">React</span><span class="sc__pill">Next.js</span><span class="sc__pill">Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2: Back-End -->
+          <div class="sc sc--emerald reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,75 C35,45 90,110 135,78 C170,52 195,88 210,72 L210,140 L0,140 Z" fill="#9ee5cb"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,90 C55,65 100,108 145,82 C178,64 202,95 210,87 L210,140 L0,140 Z" fill="#49c99a"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,102 C50,82 105,118 155,94 C186,78 206,102 210,98 L210,140 L0,140 Z" fill="#22b07d"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fab fa-node-js"></i></div>
+              <span class="sc__title">Back-End &amp; APIs</span>
+            </div>
+            <div class="sc__tags"><span>Node</span><span>Express</span><span>REST</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">Back-End &amp; APIs</span>
+              <p>Scalable RESTful APIs with Node.js, Express, and Spring Boot — secured with JWT &amp; OAuth, fully documented.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">Node.js</span><span class="sc__pill">Express</span><span class="sc__pill">OAuth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3: Database -->
+          <div class="sc sc--violet reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,78 C40,52 85,112 130,76 C168,48 195,92 210,74 L210,140 L0,140 Z" fill="#c4b5fd"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,92 C50,68 98,110 145,84 C177,66 202,96 210,88 L210,140 L0,140 Z" fill="#9d78f8"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,104 C48,84 103,120 152,96 C184,80 207,104 210,100 L210,140 L0,140 Z" fill="#7c5cfa"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fa fa-database"></i></div>
+              <span class="sc__title">Database Design</span>
+            </div>
+            <div class="sc__tags"><span>SQL</span><span>Mongo</span><span>ORM</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">Database Design</span>
+              <p>Expert in MS SQL, MySQL, PostgreSQL, and MongoDB — optimised queries, schema design, and migrations.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">SQL</span><span class="sc__pill">MongoDB</span><span class="sc__pill">ORM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4: Auth & Security -->
+          <div class="sc sc--rose reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,80 C38,52 82,112 125,76 C162,46 192,90 210,72 L210,140 L0,140 Z" fill="#fba8c0"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,92 C48,66 96,110 142,82 C174,62 200,96 210,86 L210,140 L0,140 Z" fill="#f87098"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,104 C46,82 102,120 150,94 C183,76 206,102 210,98 L210,140 L0,140 Z" fill="#f43f72"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fa fa-shield-alt"></i></div>
+              <span class="sc__title">Auth &amp; Security</span>
+            </div>
+            <div class="sc__tags"><span>JWT</span><span>OAuth</span><span>RBAC</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">Auth &amp; Security</span>
+              <p>JWT refresh-token rotation, OAuth 2.0, role-based access control, and brute-force protection built in.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">JWT</span><span class="sc__pill">OAuth 2.0</span><span class="sc__pill">RBAC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5: AI-Powered -->
+          <div class="sc sc--amber reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,82 C42,54 86,114 128,78 C164,48 193,92 210,74 L210,140 L0,140 Z" fill="#fdd89b"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,94 C52,68 100,112 146,84 C178,64 203,97 210,88 L210,140 L0,140 Z" fill="#fbbf4a"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,106 C50,84 106,122 154,96 C186,78 207,104 210,100 L210,140 L0,140 Z" fill="#f59e0b"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fa fa-robot"></i></div>
+              <span class="sc__title">AI-Powered Apps</span>
+            </div>
+            <div class="sc__tags"><span>LLM</span><span>Pipelines</span><span>AI</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">AI-Powered Apps</span>
+              <p>Built AI-integrated web apps and data preprocessing pipelines for LLM training alongside AI engineering teams.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">LLM</span><span class="sc__pill">Python</span><span class="sc__pill">Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6: Real-Time -->
+          <div class="sc sc--cyan reveal">
+            <div class="sc__waves">
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,78 C38,50 84,112 128,77 C165,48 193,90 210,72 L210,140 L0,140 Z" fill="#a5f0f8"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,91 C50,66 99,110 145,83 C177,64 202,96 210,87 L210,140 L0,140 Z" fill="#38d4e8"/></svg>
+              <svg viewBox="0 0 210 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,103 C48,83 104,120 153,95 C185,78 207,103 210,99 L210,140 L0,140 Z" fill="#06b6d4"/></svg>
+            </div>
+            <div class="sc__top">
+              <div class="sc__icon"><i class="fa fa-bolt"></i></div>
+              <span class="sc__title">Real-Time Systems</span>
+            </div>
+            <div class="sc__tags"><span>WebSockets</span><span>Live</span></div>
+            <div class="sc__hover">
+              <span class="sc__hover-title">Real-Time Systems</span>
+              <p>Live chat, currency rates, notifications, and collaborative dashboards using WebSockets for instant data experiences.</p>
+              <div class="sc__hover-pills">
+                <span class="sc__pill">WebSockets</span><span class="sc__pill">Node.js</span><span class="sc__pill">Events</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ FEATURED PROJECTS ═══════════════════════ -->
+    <section class="section" id="featured">
+      <div class="container">
+        <p class="section-sub reveal">Selected work</p>
+        <h2 class="section-title reveal">Featured Projects<span class="accent-dot">.</span></h2>
+
+        <div class="featured-grid">
+
+          <!-- Featured 1: Currency Exchange -->
+          <div class="project-card reveal"
+               data-info='{"title":"Marketplace Currency Exchange","desc":"Real-time marketplace where users can buy and sell different currencies. Features live currency rate charts, WebSocket notifications, and secure JWT/OAuth 2.0 auth.","stack":["Next.js","Redux Toolkit","WebSockets","JWT","OAuth 2.0","Node.js"],"github":"https://github.com/Abdullah-Memon"}'>
+            <div class="pc-top" style="background:linear-gradient(135deg,#4776E6,#8E54E9);">
+              <div class="pc-notch"></div>
+              <div class="pc-topbar">
+                <span class="pc-badge">Full Stack</span>
+                <div class="pc-actions">
+                  <a class="pc-action" href="https://github.com/Abdullah-Memon" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                  <button class="pc-action" data-modal title="Details"><i class="fa fa-info-circle"></i></button>
+                </div>
+              </div>
+              <div class="pc-icon-wrap"><i class="fa fa-exchange-alt"></i></div>
+            </div>
+            <div class="pc-body">
+              <h3 class="pc-title">Marketplace Currency Exchange</h3>
+              <p class="pc-desc">Real-time currency buy/sell platform with live rate analysis and WebSocket notifications.</p>
+              <div class="project-tags">
+                <span class="tag">Next.js</span><span class="tag">Redux Toolkit</span><span class="tag">WebSockets</span><span class="tag">OAuth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 2: Education LMS -->
+          <div class="project-card reveal"
+               data-info='{"title":"Student-Centric Education LMS","desc":"OBE-adapted LMS for 1000+ students per batch with separate authenticated portals for faculty, students and teachers, batch course management and JWT refresh token auth.","stack":["React","Node.js","Express","MS SQL Server","JWT"],"github":"https://github.com/Abdullah-Memon"}'>
+            <div class="pc-top" style="background:linear-gradient(135deg,#FC5C7D,#6A82FB);">
+              <div class="pc-notch"></div>
+              <div class="pc-topbar">
+                <span class="pc-badge">Full Stack</span>
+                <div class="pc-actions">
+                  <a class="pc-action" href="https://github.com/Abdullah-Memon" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                  <button class="pc-action" data-modal title="Details"><i class="fa fa-info-circle"></i></button>
+                </div>
+              </div>
+              <div class="pc-icon-wrap"><i class="fa fa-graduation-cap"></i></div>
+            </div>
+            <div class="pc-body">
+              <h3 class="pc-title">Student-Centric Education LMS</h3>
+              <p class="pc-desc">OBE-adapted LMS for 1000+ students — separate portals for faculty, students &amp; teachers.</p>
+              <div class="project-tags">
+                <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MS SQL</span><span class="tag">JWT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 3: MERN Chat App -->
+          <div class="project-card reveal"
+               data-info='{"title":"Chat Application (MERN + WebSockets)","desc":"Real-time online chat application built with the MERN stack and WebSockets. Supports live messaging, user presence indicators, chat rooms, and persistent message history.","stack":["MongoDB","Express.js","React","Node.js","WebSockets"],"github":"https://github.com/Abdullah-Memon"}'>
+            <div class="pc-top" style="background:linear-gradient(135deg,#5B86E5,#36D1DC);">
+              <div class="pc-notch"></div>
+              <div class="pc-topbar">
+                <span class="pc-badge">Real-Time</span>
+                <div class="pc-actions">
+                  <a class="pc-action" href="https://github.com/Abdullah-Memon" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                  <button class="pc-action" data-modal title="Details"><i class="fa fa-info-circle"></i></button>
+                </div>
+              </div>
+              <div class="pc-icon-wrap"><i class="fa fa-comments"></i></div>
+            </div>
+            <div class="pc-body">
+              <h3 class="pc-title">Chat Application – MERN</h3>
+              <p class="pc-desc">Real-time chat with WebSockets, chat rooms, and persistent message history.</p>
+              <div class="project-tags">
+                <span class="tag">MERN</span><span class="tag">WebSockets</span><span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+          <a href="portfolio.html" class="btn btn-outline">
+            View All Projects <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ EXPERIENCE SNAPSHOT ═══════════════════════ -->
+    <section class="section" id="exp">
+      <div class="container">
+        <p class="section-sub reveal">Where I've worked</p>
+        <h2 class="section-title reveal">Experience<span class="accent-dot">.</span></h2>
+
+        <div class="htl reveal" style="margin-top:2.5rem;">
+          <div class="htl-track">
+
+            <!-- 1: Freelance Web Dev (oldest) –– label BELOW -->
+            <div class="htl-item">
+              <div class="htl-spacer-top"></div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-label htl-label-bottom">
+                <div class="htl-label-title">Freelance Developer</div>
+                <div class="htl-label-company">Self-Employed</div>
+                <div class="htl-label-desc">Delivered client web projects & built foundation skills</div>
+              </div>
+              <div class="htl-year htl-year-bot">2020</div>
+            </div>
+
+            <!-- 2: React Dev (2021–2022) –– label ABOVE -->
+            <div class="htl-item">
+              <div class="htl-year htl-year-top">2021</div>
+              <div class="htl-label htl-label-top">
+                <div class="htl-label-title">React.js Developer</div>
+                <div class="htl-label-company">Junior Role</div>
+                <div class="htl-label-desc">Built responsive UIs with React & integrated REST APIs</div>
+              </div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-spacer-bot"></div>
+            </div>
+
+            <!-- 3: School Mgmt (2022) –– label BELOW -->
+            <div class="htl-item">
+              <div class="htl-spacer-top"></div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-label htl-label-bottom">
+                <div class="htl-label-title">Full Stack Developer</div>
+                <div class="htl-label-company">Contract Projects</div>
+                <div class="htl-label-desc">MERN stack apps, school &amp; POS systems in C# / .NET</div>
+              </div>
+              <div class="htl-year htl-year-bot">2022</div>
+            </div>
+
+            <!-- 4: Project Mgmt System (2023) –– label ABOVE -->
+            <div class="htl-item">
+              <div class="htl-year htl-year-top">2023</div>
+              <div class="htl-label htl-label-top">
+                <div class="htl-label-title">Software Engineer</div>
+                <div class="htl-label-company">Client Projects</div>
+                <div class="htl-label-desc">PHP/MySQL systems, restaurant POS &amp; chat app delivery</div>
+              </div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-spacer-bot"></div>
+            </div>
+
+            <!-- 5: XFlow / AI (2024–2025) –– label BELOW -->
+            <div class="htl-item">
+              <div class="htl-spacer-top"></div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-label htl-label-bottom">
+                <div class="htl-label-title">AI Engineer I</div>
+                <div class="htl-label-company">XFlow / BlueSCARF</div>
+                <div class="htl-label-desc">118M Sindhi tokens, LLM data pipelines</div>
+              </div>
+              <div class="htl-year htl-year-bot">2024</div>
+            </div>
+
+            <!-- 6: Ambile (2025–2026) –– label ABOVE -->
+            <div class="htl-item">
+              <div class="htl-year htl-year-top">2025</div>
+              <div class="htl-label htl-label-top">
+                <div class="htl-label-title">Full Stack Developer</div>
+                <div class="htl-label-company">Ambile — Hyderabad</div>
+                <div class="htl-label-desc">10+ apps, ~93% perf gain, React / Node / Flask</div>
+              </div>
+              <div class="htl-connector htl-connector--top"></div>
+              <div class="htl-dot"></div>
+              <div class="htl-connector htl-connector--bot"></div>
+              <div class="htl-spacer-bot"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top:2rem;">
+          <a href="about.html" class="btn btn-outline">Full Timeline <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CTA ═══════════════════════ -->
+    <section class="section" id="cta">
+      <div class="container">
+        <div class="clay reveal" style="padding:3.5rem 2.5rem;text-align:center;background:linear-gradient(135deg,var(--accent-soft),var(--bg-card));">
+          <h2 style="font-size:clamp(1.5rem,3.5vw,2rem);font-weight:800;margin-bottom:.75rem;">
+            Open to Full-Time Opportunities<span class="accent-dot">.</span>
+          </h2>
+          <p style="color:var(--text-secondary);max-width:520px;margin:0 auto 2rem;line-height:1.75;">
+            I'm actively exploring full-stack and software engineering roles at product-driven companies worldwide.
+            Let's build something great together.
+          </p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fa fa-paper-plane"></i> Get In Touch
+            </a>
+            <a href="assets/cv/Web Developer Abdullah Memon Developer.pdf" download class="btn btn-outline">
+              <i class="fa fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <p>Designed &amp; built with ❤️ by <a href="index.html">Abdullah Memon</a> &mdash; &copy; <span id="year"></span></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- Update CV href below when switching from .docx → .pdf in production -->
+  <script src="assets/script/app.js"></script>
+</body>
+</html>
